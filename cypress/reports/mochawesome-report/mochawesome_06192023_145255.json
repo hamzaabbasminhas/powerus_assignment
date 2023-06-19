@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-19T12:52:40.575Z",
+    "end": "2023-06-19T12:52:55.125Z",
+    "duration": 14550,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "660c8db1-fa08-40f0-a11e-b5394280bd1a",
+      "title": "",
+      "fullFile": "cypress/integration/src/specs/check-courses.spec.ts",
+      "file": "cypress/integration/src/specs/check-courses.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "60fb4ad0-ea22-42f6-8d94-565e8ae86aa4",
+          "title": "Register user and test course page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test for verifiying number of courses and titles of courses",
+              "fullTitle": "Register user and test course page Test for verifiying number of courses and titles of courses",
+              "timedOut": null,
+              "duration": 14508,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Do the registeration process for the user\ncy.registerUser();\n//assert the title and number of users\nkursePage.CourseCards().each(function ($e1, index, list) {\n    length = list.length;\n    var expectText = $e1.find('a>p').eq(1).text();\n    expect(expectText).to.equal(data.coursesNames[index]);\n}).then(function () {\n    expect(length).to.equal(data.coursesNames.length);\n});",
+              "err": {},
+              "uuid": "b1799601-e22c-4cd7-b8ad-94af24255b27",
+              "parentUUID": "60fb4ad0-ea22-42f6-8d94-565e8ae86aa4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b1799601-e22c-4cd7-b8ad-94af24255b27"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14508,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "charts": true,
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
