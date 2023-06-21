@@ -1,4 +1,4 @@
-# powerus_assignment
+# Powerus Assignment
 
 This repository contains tests for UI automation solution for PowerUs assignment using Cypress. The tests follow the **Page Object Model (POM)** design pattern for better maintainability and readability. The tests cover various scenarios for interacting with different web elements and performing common tasks.
 
