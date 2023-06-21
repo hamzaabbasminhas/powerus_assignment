@@ -26,16 +26,19 @@ To execute the test, you can use the following commands:
 
 ```shell
 npm run test
+```
 
 - Run all tests on the chrome browser:
 
 ```shell
 npm run test:Chrome
+```
 
 - Run all the tests in headed mode:
 
 ```shell
 npm run test:headed
+```
 
 ## Test and Page Object Files:
 
