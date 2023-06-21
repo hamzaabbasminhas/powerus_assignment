@@ -31,7 +31,7 @@ npm run test
 - Run all tests on the chrome browser:
 
 ```shell
-npm run test:Chrome
+npm run test:chrome
 ```
 
 - Run all the tests in headed mode:
