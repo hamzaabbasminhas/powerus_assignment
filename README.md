@@ -16,7 +16,7 @@ To run the example tests locally, follow these steps:
 
  ```shell
 npm install
-
+```
 
 ## Running the Tests
 
