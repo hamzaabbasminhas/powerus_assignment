@@ -70,6 +70,8 @@ Mocha: JavaScript test framework used by Cypress.
 Mochawesome: Reporter for generating stylish HTML reports.
 Mochawesome-merge: Tool for merging multiple Mochawesome reports.
 
-
+## TODO (Improvements):
+- check on BrowserStack if solution runs on Windows and Linux Machines, since I tested only on Mac and docker.
+- Using docker images for execution of tests
 
 
